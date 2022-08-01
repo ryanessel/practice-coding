@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Canvas Basics</title>
+ 
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <!-- the magic happens inside this tag - 
+            it's HTML5 tag that supports animation -->
+            <!-- CANVAS NEEDS AND ID MAKES IT EASIER TO SEE IN A SCRIPT!!! -->
+    <canvas id="example" width="300" height="300"></canvas>   <!-- you set the width and height like so -->
+ 
+<!-- 4 different types of contexts for <canvas> tags
+    
+1. 2D leadign to the createion of a CanvasRenderingContext2D object representing a two dimension redning context
+2. webgl ()a WebGLRenderingContext object representing a three-dimensional rendering context. This context is only available on browsers that implement WebGL version 1
+3. webgl2 which will create a WebGL2RenderingContext object representing a three-dimensional rendering context. This context is only available on browsers that implement WebGL version 2 (OpenGL ES 3.0).
+4. bitmaprenderer- which will create an imageBitMmapRenderingContext whioch only provides functionality to replace the content of the canvas given a bitmap image.
+-->
+
+<!-- canvas is blank at first. Need a script to access the rendering context and draw on it.
+canvas has a JS method called "getContext()". it takes one param, and we only need to know "2d" for now.
+This is used to rendering context and its drawing fuctions
+-->
+
+    <!-- include js file after DOM is loaded; 
+            if included earlier, you have to use window.onload = function(){ ... } 
+            approach in your intro.js file -->
+    <script src="javascript/intro.js"></script>
+  </body>
+</html>
